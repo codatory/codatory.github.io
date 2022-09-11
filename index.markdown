@@ -4,3 +4,6 @@
 
 layout: home
 ---
+
+# Welcome
+- [Blog](/posts)
