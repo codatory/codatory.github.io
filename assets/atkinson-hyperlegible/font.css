@@ -4,6 +4,7 @@
          url('Atkinson-Hyperlegible-Regular-102.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
          url('Atkinson-Hyperlegible-Bold-102.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
          url('Atkinson-Hyperlegible-BoldItalic-102.woff') format('woff');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
          url('Atkinson-Hyperlegible-Italic-102.woff') format('woff');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 body {
