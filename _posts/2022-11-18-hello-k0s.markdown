@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Hello K0S"
+date:   2022-11-18 21:00:00 -0400
+categories: k8s
+---
+
+Ok, we laid down a base operating system and now we need to get Kubernetes running on top.
+I selected the K0S distribution, for a balance of being a mostly standard Kubernetes stack
+and having some really easy tooling for deploying and maintaining the cluster.
+
+Because of the number of nodes (more than 1), I installed with [k0sctl](https://docs.k0sproject.io/v1.25.4+k0s.0/k0sctl-install/). My [k0sctl.yml](https://gist.github.com/codatory/57f001f9937b59aec7ee3323166ab810) file simply lists the servers and their roles, and becase Ansible has already been configured for these hosts all of my SSH keys and passwordless sudo are ready.
+
+With k0sctl downloaded into my path and the config file ready, I simply ran `k0sctl apply --config k0sctl.yml` and in a few minutes I had a Kubernetes cluster up and running. To make standard Kubernetes tools work reliably I also issued a `mkdir ~/.kube; k0sctl kubeconfig > ~/.kube/config`. Now I can use kubectl, helm and lens to manage my cluster.
+
+Great, so now we have a functional cluster, but it's missing a lot of features. Next up we'll configure [metallb](https://metallb.universe.tf/) so we can connect services to virtual IP's and deploy an [Ingress](https://traefik.io/traefik/) on top of that.
