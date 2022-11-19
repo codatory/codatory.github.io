@@ -14,7 +14,9 @@ Guess what? Yep, we're adding another helm repo.
 Now we're going to be lazy and create one NFS provisioner that will pick up requests for volumes and map them to NFS, and make sure it cleans them up when they're no longer needed. You can do a lot more, but for now just make sure the server and path are correct for your environment.
 
 ```bash
-helm install nfs-subdir-external-provisioner nfs-subdir-external-provisioner/nfs-subdir-external-provisioner \
+helm install --create-namespace --namespace nfs-system \
+    nfs-subdir-external-provisioner \
+    nfs-subdir-external-provisioner/nfs-subdir-external-provisioner \
     --set nfs.server=10.8.0.3 \
     --set nfs.path=/KuberNFS \
     --set storageClass.defaultClass=true \
