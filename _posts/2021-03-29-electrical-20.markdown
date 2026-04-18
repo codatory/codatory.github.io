@@ -1,0 +1,132 @@
+---
+layout: post
+title:  "Electrical 2.0"
+date:   2021-03-29 00:00:00 -0500
+categories: 
+---
+
+Ok, I have a good idea of what I want in a final electrical solution. It needs
+to be reliable, flexible extensible and it needs to have enough capacity that I
+don't have to worry about how I use it (within reason).
+
+Immediately, I knew I was going to go with Victron chargers and battery
+management components. They're a little more expensive than other options on the
+market, but they're good quality and they offer nearly everything with Bluetooth
+integration which meant I could keep all the insight and control I wanted
+without needing to mount a whole bunch of control panels and crawl around to use
+them.
+
+## Power Storage
+
+I wanted, and ordered, a pair of 200AH Lithium batteries but they got caught up
+in a COVID-related shipping disaster and ultimately I decided it wasn't worth
+holding off on the project and moved forward with purching some surprisingly
+good, cheap, [Gel Deep-Cycle batteries](https://amzn.to/3ddT5if). Because of how
+I've designed my battery storage location, I bought 3 of those batteries to
+maximize the space.![](/assets/images/inline-images/image-1-1.jpeg)2 100AH Gel
+Deep-Cycle Batteries
+
+All the high-current protection in the system is provided by [MRBF Terminal
+Fuses](https://amzn.to/3swvAHz), which you can see mounted onto every battery.
+I'm a big fan of those [fused terminal blocks](https://amzn.to/39k0YBx), as it
+means there is no un-protected cable in the system and a short failure of one
+battery won't damage the others. I used some cheap foam [appliance
+pads](https://amzn.to/2PhUixd) to make sure the batteries didn't shift around
+even though in my testing they were really solid in there without it. I wouldn't
+advocate for this design, but it does seem to work OK and everything is fused
+and protected and it's all also held down from the top so I'm sure it's not a
+problem.
+
+Great, that has the batteries taken care of. Since these are native 12v
+batteries there's no voltage conversion required for my 12v appliances and they
+can run low-draw appliances extremely efficiently. And given the size of the
+bank, they also have no issues running high-current loads when needed.
+Everything is protected, and secured.
+
+## Charging
+
+Ok, with storage out of the way how are we charging these things? I wanted to
+have a redundant, flexible and reliable solution for charging. With that in
+mind, the main charging components of this system are:
+- (2) [Victron SmartSolar MPPT 75v 10A Solar Charge Controller](https://amzn.to/3cxGCHj)
+- [170 Watt Rich Solar Panel](https://amzn.to/3u1CbKz)
+- (2) [60 Watt Portable Rich Solar Panel](https://amzn.to/3de1jHk)
+- [Victron Orion-Tr Smart 18 Amp Isolated DC-DC Charger](https://amzn.to/3u3bYvb)
+- [Victron BlueSmart 12v 15A Charger](https://amzn.to/3w543iJ)
+
+This solution provides up to ~200 watts of AC charging (shore power), up to ~220
+watts of Alternator (engine) charging, and up to~ 270 watts of solar
+charging.![](/assets/images/inline-images/image-1-3.jpeg)Solar panel
+installation
+
+These chargers are all indivudually fused on a dedicated charging [fuse
+panel](https://amzn.to/3dbvP4I). That means any charger can be simply isolated,
+and any faults are isolated between chargers. Each of these chargers is
+individually able to meet my projected electrical demands easily, so this
+solution provides a flexible and redundant solution for keeping the juice
+flowing.
+
+## Management
+
+Since I'm using batteries with no built-in protection it's important to shut off
+loads when they could damage the battery bank. It's also helpful to have an
+accurate "state of charge" reading of the bank. To accomplish this, it's more
+Victron components, namely:
+- [Victron SmartShunt Battery Monitor](https://amzn.to/31sS2G0)
+- [Victron Smart Battery Protect](https://amzn.to/3sxP1A2)
+
+These devices provide excellent visibility and control over my battery loads and
+the flow of power to and from the
+battery.
+
+![](/assets/images/inline-images/image-1-4.jpeg)
+
+So, what does all this
+power? Well, there are two main feeds coming from the electrical system to power
+loads. One of them is simply a [Victron 1200VA
+Inverter](https://amzn.to/39mNgOG) with [Bluetooth
+dongle](https://amzn.to/3w83Qvd). This provides a source of 120v power for
+things (like my work laptop or instant pot) that require it. Everything else is
+a native 12v device, or USB powered device and that's all controlled through my
+control hub.
+
+![](/assets/images/inline-images/image-1-5.jpeg)
+
+It's not the prettiest thing on the outside, but trust me the inside is far
+worse. This [switch panel](https://amzn.to/2P8uYd4) comes with some pretty
+bizarre wiring (the fuses are on the output of the switches, but with a very
+under-sized common feed for example), but it was pretty easy to fix that up and
+wire everything to common 12v feed and ground posts. The 120v outlets are fed
+from an automatic transfer switch that I'll cover later, but everything else is
+fed from the Smart Battery Protect. The switches, from left to right, are:
+- Inverter Control
+- [Wifi Power](https://codatory.com/wan-on-the-run/)
+- Internal Comfort (electric blanket, etc.)
+- Internal Critical (fridge, water, etc.)
+- Convenience (12v front outlet, USB ports, voltage gauge)
+
+This is mounted inside in a convenient spot so I can control everything easily,
+and easily see what's powered up at any given time.
+
+### About those 120v outlets...
+
+I ultimately settled on a relatively convoluted but flexible solution to feeding
+those. The outlets in the box are fed directly from an [automatic transfer
+switch](https://amzn.to/3dcGa0d), which has responsibility for selecting whether
+shore power or the inverter will be powering those outlets. That transfer switch
+is connected to the Inverter as well as to a [GFCI
+Breaker](https://amzn.to/2Px0D7H) feed from my shore-power lead. The inverter
+control lead is powered by the control hub, so it is protected by the Battey
+Protect, even though the feed wiring bypasses it for compatibility reasons.
+
+## How does it all look together?
+
+Alright, it's not a pretty install. For now I wanted to keep everything visible
+and servicable with simple tools. Everything is cabled with high-quality welding
+cable, and the feed from the alternator runs underneath the van and is futher
+protected by some plastic split-loom conduit. The wires are all extremely
+over-sized for their loads, and everything is heavily protected through
+redundant fuses and digital protection
+routines.
+![](/assets/images/inline-images/image-2.jpeg)
+![](/assets/images/inline-images/image-1-2.jpeg)
