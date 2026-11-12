@@ -31,19 +31,19 @@ the work week.
 
 And now, for some photos from the trip so far…
 
-### Scioto Park, Dublin, Ohio
-![](/assets/images/inline-images/20230915_090906.jpg)
+## Scioto Park, Dublin, Ohio
+{% include post-image.html file="20230915_090906.jpg" alt="Rocky riverbank shaded by trees at Scioto Park" width=1280 height=960 %}
 
-### Gorman Nature Center, Mansfield, Ohio
-![](/assets/images/inline-images/20230915_150442.jpg)
-![](/assets/images/inline-images/20230915_151858.jpg)
+## Gorman Nature Center, Mansfield, Ohio
+{% include post-image.html file="20230915_150442.jpg" alt="Woodland trail beneath tall trees at Gorman Nature Center" width=1280 height=960 %}
+{% include post-image.html file="20230915_151858.jpg" alt="Mown trail through a meadow at Gorman Nature Center" width=1280 height=960 %}
 
-### Der Dutchman, Bellville, Ohio
-![](/assets/images/inline-images/20230915_181341.jpg)
-![](/assets/images/inline-images/20230915_183122.jpg)
+## Der Dutchman, Bellville, Ohio
+{% include post-image.html file="20230915_181341.jpg" alt="Plate of meat and noodles beside a dinner roll at Der Dutchman" width=1280 height=960 %}
+{% include post-image.html file="20230915_183122.jpg" alt="Tall slice of pie on a dessert plate" width=1280 height=1707 %}
 
-### Cuyahoga Valley National Park
-![](/assets/images/inline-images/20230916_124744.jpg)
-![](/assets/images/inline-images/20230916_130157.jpg)
-![](/assets/images/inline-images/20230916_131105.jpg)
-![](/assets/images/inline-images/20230916_132655.jpg)
+## Cuyahoga Valley National Park
+{% include post-image.html file="20230916_124744.jpg" alt="Stone and timber entrance sign for Cuyahoga Valley National Park" width=1280 height=960 %}
+{% include post-image.html file="20230916_130157.jpg" alt="Turtles lined up on a log in a pond" width=1280 height=960 %}
+{% include post-image.html file="20230916_131105.jpg" alt="Wooden boardwalk curving through the forest" width=1280 height=1707 %}
+{% include post-image.html file="20230916_132655.jpg" alt="Shallow creek running between wooded banks" width=1280 height=1707 %}

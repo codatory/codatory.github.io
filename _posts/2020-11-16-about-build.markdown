@@ -7,7 +7,7 @@ categories:
 
 I wanted, for both me and you, to sit down and write out what the goals in the
 first build out were. I talked briefly in [Buying the
-Van](https://codatory.com/buying-the-van/) about how the idea is to be a starter
+Van]({% post_url 2020-11-16-buying-van %}) about how the idea is to be a starter
 van to find out what I need and don’t need in a build.### What is the use case
 for the van?
 

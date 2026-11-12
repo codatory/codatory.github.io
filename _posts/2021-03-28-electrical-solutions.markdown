@@ -6,7 +6,7 @@ categories:
 ---
 
 Ok, so the simple setup I started with [fell
-flat](https://codatory.com/electrical-upgrades/). I'm a natural-born problem
+flat]({% post_url 2021-03-28-electrical-challenges %}). I'm a natural-born problem
 solver, and this is a problem I'm fully qulified to solve!
 
 So, what did we learn?
@@ -15,10 +15,10 @@ So, what did we learn?
 - Solar is unlikely to be successful as a single charging option
 
 Great, so, get a bigger solar generator! After all, the [ECOFLOW
-Delta](https://amzn.to/2QBwVij) has 5x the power of your current solution, and
+Delta](https://www.ecoflow.com/us/blog/delta-faq-everything-you-need-to-know) has 5x the power of your current solution, and
 charges extremely fast.
 
-![](/assets/images/inline-images/image.png)
+{% include post-image.html file="image.png" alt="EcoFlow DELTA portable power station on an outdoor table" width=970 height=600 loading="eager" %}
 
 EFDELTA 1250 Wh Portable Power Station Recharge 0 to 80% In One Hour
 

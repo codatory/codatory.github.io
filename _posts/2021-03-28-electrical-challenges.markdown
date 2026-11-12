@@ -5,7 +5,7 @@ date:   2021-03-28 00:00:00 -0500
 categories: 
 ---
 
-Back in [Starting Electrical](https://codatory.com/starting-electrical/), I
+Back in [Starting Electrical]({% post_url 2020-11-17-starting-electrical %}), I
 wrote about a simple solution to getting some power deployed in my van. This was
 excellent, as it gave me the ability to practically measure how I really used
 power with some test trips.
@@ -15,7 +15,7 @@ but the ability to efficiently *use* that bank. This efficiency comes in three
 parts. In this post, I'll discuss the challenges that came from the portable
 battery solution.
 
-### Part One: Efficient Usage
+## Part One: Efficient Usage
 
 Most of these "Solar Generator" devices have an internal Lithium battery that
 operates at a voltage different from the ones you use on the front panel. Often
@@ -25,7 +25,7 @@ of the pack. For most practical uses of these devices, that's fine. But for my
 application, that meant I would *never *see a battery life longer than about 12
 hours.
 
-### Part Two: Efficient Charging
+## Part Two: Efficient Charging
 
 The particular packs I chose, although this is pretty common across the market,
 have a very slow charging rate. Ultimately, in a vehichle the fastest charge
@@ -34,7 +34,7 @@ number is often a lot closer to 40-60 watts. That means to charge the packs I
 had used for 12 hours and were now depleted would take over 6 hours of
 driving!
 
-### Part Three: Convenience
+## Part Three: Convenience
 
 Most products in this market, due to their standby current usage, disable their
 ports once current draw is below a certain threshold for a period of time. That

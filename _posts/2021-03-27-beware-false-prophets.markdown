@@ -12,4 +12,4 @@ park was well maintained and the trails were generously wide and mostly paved or
 at least
 hard-packed.
 
-![](/assets/images/inline-images/prophetstown-2.jpeg)
+{% include post-image.html file="prophetstown-2.jpeg" alt="Floodwater covering both wheel tracks of a path through open prairie" width=960 height=1280 loading="eager" %}

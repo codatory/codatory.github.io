@@ -18,7 +18,7 @@ what the implications of that are. But first, let me give you the actionable
 bit. Domain reputation matters a lot more now than it has in the past. Be sure
 you as a sender are responsible for what you send, are subscribed to the
 relevant [feedback
-loops](https://www.spamresource.com/2016/03/what-is-isp-feedback-loop-fbl.html),
+loops](https://www.spamresource.com/2022/06/delivterms-what-is-feedback-loop-fbl.html),
 and ensure every mail you send from your domain is [fully
 authenticated](https://www.spamresource.com/2022/04/kickbox-blog-email-authentication-series.html).
 If recipients want to receive your mail, and your mail is fully authenticated
@@ -32,7 +32,7 @@ being rejected, but every infraction will make it harder to get to the inbox.
 Let's do a survey of the different components and talk about what you can do to
 help.
 
-### Server Configuration
+## Server Configuration
 
 Historically this was the main barrier to getting your mail delivered. You
 needed to have matching forward and reverse DNS, a valid HELO name, and you
@@ -49,7 +49,7 @@ run your own server. Well, except for all the domain configuration stuff we're
 about to cover :-). This comes as a side-effect of providers making getting
 access to a properly configured server trivial.
 
-### Domain Configuration
+## Domain Configuration
 
 Are we here already? Hi! Domain configuration is becoming increasingly
 important. What do I mean by "Domain Configuration" anyway? Well, that's simply
@@ -94,7 +94,7 @@ Once your mail is properly authenticated, you should start building domain
 reputation and having better luck at getting to the inbox. Especially for mail
 delivered via lower reputation intermediaries.
 
-### Mail Content
+## Mail Content
 
 If you don't have domain reputation, then your mail is going to be filtered
 heavily based on its contents. This is a real problem as a sender because these
@@ -109,7 +109,7 @@ recommendation I can give you here is just to send mail your users want and
 don't do a bunch of crazy stuff. Also, apologies in advance if you do genuinely
 sell Viagra or similar that's going to be an uphill battle :-).
 
-### User Interaction
+## User Interaction
 
 If users don't open your email, mailbox providers will stop delivering it. If
 users interact with your email (click links, reply, etc) they will be more
@@ -136,5 +136,5 @@ into the mailbox provider and provide filtering after delivery if you aren't
 happy with the solution provided by your mail provider.
 
 Well, that's a lot of information for now. If you have further questions or
-comments [reach out](https://codatory.com/contact), you might inspire a
+comments [reach out](mailto:{{ site.email }}), you might inspire a
 follow-up post.

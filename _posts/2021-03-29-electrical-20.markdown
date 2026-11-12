@@ -23,7 +23,11 @@ in a COVID-related shipping disaster and ultimately I decided it wasn't worth
 holding off on the project and moved forward with purching some surprisingly
 good, cheap, [Gel Deep-Cycle batteries](https://amzn.to/3ddT5if). Because of how
 I've designed my battery storage location, I bought 3 of those batteries to
-maximize the space.![](/assets/images/inline-images/image-1-1.jpeg)2 100AH Gel
+maximize the space.
+
+{% include post-image.html file="image-1-1.jpeg" alt="Two blue batteries with terminal fuses and heavy cables" width=960 height=1280 %}
+
+2 100AH Gel
 Deep-Cycle Batteries
 
 All the high-current protection in the system is provided by [MRBF Terminal
@@ -52,11 +56,15 @@ mind, the main charging components of this system are:
 - [170 Watt Rich Solar Panel](https://amzn.to/3u1CbKz)
 - (2) [60 Watt Portable Rich Solar Panel](https://amzn.to/3de1jHk)
 - [Victron Orion-Tr Smart 18 Amp Isolated DC-DC Charger](https://amzn.to/3u3bYvb)
-- [Victron BlueSmart 12v 15A Charger](https://amzn.to/3w543iJ)
+- [Victron BlueSmart 12v 15A Charger](https://www.victronenergy.com/chargers/blue-smart-ip65-charger)
 
 This solution provides up to ~200 watts of AC charging (shore power), up to ~220
 watts of Alternator (engine) charging, and up to~ 270 watts of solar
-charging.![](/assets/images/inline-images/image-1-3.jpeg)Solar panel
+charging.
+
+{% include post-image.html file="image-1-3.jpeg" alt="White van with solar panels mounted on its roof" width=1280 height=960 %}
+
+Solar panel
 installation
 
 These chargers are all indivudually fused on a dedicated charging [fuse
@@ -79,7 +87,7 @@ These devices provide excellent visibility and control over my battery loads and
 the flow of power to and from the
 battery.
 
-![](/assets/images/inline-images/image-1-4.jpeg)
+{% include post-image.html file="image-1-4.jpeg" alt="Victron SmartShunt app showing the battery at 100 percent charge" width=592 height=1280 %}
 
 So, what does all this
 power? Well, there are two main feeds coming from the electrical system to power
@@ -90,7 +98,7 @@ things (like my work laptop or instant pot) that require it. Everything else is
 a native 12v device, or USB powered device and that's all controlled through my
 control hub.
 
-![](/assets/images/inline-images/image-1-5.jpeg)
+{% include post-image.html file="image-1-5.jpeg" alt="Portable power box with switches, outlets, and a voltage display" width=1280 height=960 %}
 
 It's not the prettiest thing on the outside, but trust me the inside is far
 worse. This [switch panel](https://amzn.to/2P8uYd4) comes with some pretty
@@ -100,7 +108,7 @@ wire everything to common 12v feed and ground posts. The 120v outlets are fed
 from an automatic transfer switch that I'll cover later, but everything else is
 fed from the Smart Battery Protect. The switches, from left to right, are:
 - Inverter Control
-- [Wifi Power](https://codatory.com/wan-on-the-run/)
+- Wifi Power
 - Internal Comfort (electric blanket, etc.)
 - Internal Critical (fridge, water, etc.)
 - Convenience (12v front outlet, USB ports, voltage gauge)
@@ -114,8 +122,8 @@ I ultimately settled on a relatively convoluted but flexible solution to feeding
 those. The outlets in the box are fed directly from an [automatic transfer
 switch](https://amzn.to/3dcGa0d), which has responsibility for selecting whether
 shore power or the inverter will be powering those outlets. That transfer switch
-is connected to the Inverter as well as to a [GFCI
-Breaker](https://amzn.to/2Px0D7H) feed from my shore-power lead. The inverter
+is connected to the Inverter as well as to an [inline
+GFCI](https://www.southwire.com/power-management/electrical-safety/shock-shield-15a-inline-gfci-with-12-3-2-cord-with-lit-tri-source-end/p/26020008-6) feed from my shore-power lead. The inverter
 control lead is powered by the control hub, so it is protected by the Battey
 Protect, even though the feed wiring bypasses it for compatibility reasons.
 
@@ -128,5 +136,6 @@ protected by some plastic split-loom conduit. The wires are all extremely
 over-sized for their loads, and everything is heavily protected through
 redundant fuses and digital protection
 routines.
-![](/assets/images/inline-images/image-2.jpeg)
-![](/assets/images/inline-images/image-1-2.jpeg)
+
+{% include post-image.html file="image-2.jpeg" alt="Closer view of the van's electrical equipment, wiring, and mounted components" width=960 height=1280 %}
+{% include post-image.html file="image-1-2.jpeg" alt="Van electrical installation with blue equipment and red wiring across the floor" width=1280 height=960 %}

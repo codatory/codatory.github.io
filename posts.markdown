@@ -1,7 +1,12 @@
 ---
+layout: page
 title: Posts
 ---
 
-{% for post in site.posts %}
-- [{{ post.title }}]({{post.url}}) - {{post.date}}
+{% assign years = site.posts | group_by_exp: 'post', "post.date | date: '%Y'" %}
+{% for year in years %}
+## {{ year.name }}
+
+{% include post-list.html posts=year.items %}
+
 {% endfor %}

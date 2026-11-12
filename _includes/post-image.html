@@ -1,0 +1,12 @@
+{%- assign original = '/assets/images/inline-images/' | append: include.file | relative_url -%}
+{%- assign stem = include.file | split: '.' | first -%}
+{%- assign responsive = '/assets/images/responsive/' | append: stem | relative_url -%}
+{%- assign large_width = include.width | at_most: 960 -%}
+{%- assign loading = include.loading | default: 'lazy' -%}
+<picture class="post-image">
+  <source type="image/webp"
+    srcset="{% if large_width > 480 %}{{ responsive }}-480.webp 480w, {% endif %}{{ responsive }}-{{ large_width }}.webp {{ large_width }}w"
+    sizes="{% if loading == 'lazy' %}auto, {% endif %}(max-width: 44rem) calc(100vw - 2rem), 42rem">
+  <img src="{{ original }}" width="{{ include.width }}" height="{{ include.height }}"
+    alt="{{ include.alt | escape }}" loading="{{ loading }}" decoding="async">
+</picture>

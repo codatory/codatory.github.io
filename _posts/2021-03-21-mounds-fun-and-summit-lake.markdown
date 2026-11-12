@@ -9,9 +9,9 @@ Finally, a break in the weather again! I chose Summit Lake because it was
 advertised as having hard-packed trails and we'd just had a super rainy spell,
 and it was a perfect fit for the day.
 
-![](/assets/images/inline-images/msl-1.jpeg)
-![](/assets/images/inline-images/msl-3.jpeg)
-![](/assets/images/inline-images/msl-4.jpeg)
+{% include post-image.html file="msl-1.jpeg" alt="Wooded path with the lake visible through bare trees" width=1280 height=960 loading="eager" %}
+{% include post-image.html file="msl-3.jpeg" alt="Wooden railing alongside a path through leaf-covered woods" width=1280 height=960 %}
+{% include post-image.html file="msl-4.jpeg" alt="Wooden footbridge crossing a narrow creek" width=1280 height=960 %}
 
 Trail 3 at Summit Lake is a nice gentle trail along the lakeshore with plenty of
  twists and turns so you could do it several times and not go exactly the same

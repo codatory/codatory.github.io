@@ -12,8 +12,8 @@ to the shops nearby. Heads up though, the trail from the campground down is pret
 serious so if you aren’t a big hiker take the shortcut out to the road and join the 
 trail at the bridge where things are much easier.
 
-![](/assets/images/inline-images/20230919_174703.jpg)
-![](/assets/images/inline-images/20230919_175645.jpg)
-![](/assets/images/inline-images/20230919_181104.jpg)
-![](/assets/images/inline-images/20230919_181546.jpg)
-![](/assets/images/inline-images/20230919_182155.jpg)
+{% include post-image.html file="20230919_174703.jpg" alt="River far below between steep wooded walls of Quechee Gorge" width=1280 height=1707 loading="eager" %}
+{% include post-image.html file="20230919_175645.jpg" alt="Water spilling over a low dam above the gorge" width=1280 height=1707 %}
+{% include post-image.html file="20230919_181104.jpg" alt="Leaf-covered trail descending through the woods" width=1280 height=1707 %}
+{% include post-image.html file="20230919_181546.jpg" alt="Whitewater running beside layered rock in the gorge" width=1280 height=1707 %}
+{% include post-image.html file="20230919_182155.jpg" alt="Broad ledges of exposed rock beside the river" width=1280 height=1707 %}

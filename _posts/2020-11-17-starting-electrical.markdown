@@ -40,8 +40,8 @@ features we’d like to have for one.
 - 45 Watt USB-C
 
 Well, looking at that list one unit immediately popped to mind from a [YouTube
-video](https://youtu.be/v_wPD5HvlVY) I watched a few weeks ago… [This unit meets
-my needs](https://amzn.to/2IAdpzn), and due to the LiFePo4 battery chemistry is
+video](https://youtu.be/v_wPD5HvlVY) I watched a few weeks ago… This unit meets
+my needs, and due to the LiFePo4 battery chemistry is
 rated by the manufacturer for 2000 charge cycles—-but in practice this chemistry
 is known to do 4000–8000 cycles without significant degradation. This is
 *significantly *longer than most units on the market which are using NMC

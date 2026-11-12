@@ -5,10 +5,10 @@ date:   2021-02-27 00:00:00 -0500
 categories: 
 ---
 
-![](/assets/images/inline-images/shakamak-2.jpeg)
-![](/assets/images/inline-images/shakamak-3.jpeg)
-![](/assets/images/inline-images/shakamak-4.jpeg)
-![](/assets/images/inline-images/shakamak-1.jpeg)
+{% include post-image.html file="shakamak-2.jpeg" alt="Open water seen from the wooded lakeshore" width=1280 height=960 loading="eager" %}
+{% include post-image.html file="shakamak-3.jpeg" alt="Wooden footbridge with railings crossing a small ravine" width=960 height=1280 %}
+{% include post-image.html file="shakamak-4.jpeg" alt="Arched stone opening set into a wooded hillside" width=1280 height=960 %}
+{% include post-image.html file="shakamak-1.jpeg" alt="Bare trees reflected in the still lake" width=1280 height=960 %}
 
 [Shakamak](https://www.in.gov/dnr/state-parks/parks-lakes/shakamak-state-park/)
 offers some great trails and some pretty great looking family cabins. While I

@@ -12,7 +12,7 @@ trails. Excellent picnicking and family activities though. I hiked the nature
 trail at Cataract Falls with my mom, and enjoyed a picnic by the
 lake.
 
-![](/assets/images/inline-images/cf-1_0.jpeg)
-![](/assets/images/inline-images/cf-2_0.jpeg)
-![](/assets/images/inline-images/cf-3_0.jpeg)
-![](/assets/images/inline-images/cml-1_0.jpeg)
+{% include post-image.html file="cf-1_0.jpeg" alt="Cataract Falls spilling over a rock ledge into a pool" width=960 height=1280 loading="eager" %}
+{% include post-image.html file="cf-2_0.jpeg" alt="River seen through an opening in the covered bridge" width=1280 height=960 %}
+{% include post-image.html file="cf-3_0.jpeg" alt="Layered rock ledges and a low cascade at Cataract Falls" width=1280 height=1280 %}
+{% include post-image.html file="cml-1_0.jpeg" alt="Cagles Mill Lake through bare trees beside a picnic table" width=1280 height=960 %}

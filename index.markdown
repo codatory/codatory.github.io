@@ -1,9 +1,12 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
 ---
 
-# Welcome
-- [Blog](/posts)
+<p class="intro">{{ site.description | escape }}</p>
+
+## Recent posts
+
+{% assign recent_posts = site.posts | slice: 0, 5 %}
+{% include post-list.html posts=recent_posts %}
+
+[Browse all posts]({{ '/posts.html' | relative_url }})

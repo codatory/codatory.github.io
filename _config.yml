@@ -1,8 +1,8 @@
 title: Codatory's Scribbles
 email: hello@codatory.com
-description: >-
-  Codatory's notes and scribbles over time
+description: Notes on systems, RVs, and places along the way.
 url: https://www.codatory.page
+baseurl: ""
 twitter_username: codatory
 github_username:  codatory
 markdown: GFM

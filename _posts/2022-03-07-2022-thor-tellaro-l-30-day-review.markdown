@@ -13,7 +13,9 @@ of the Tellaro/Sequence I have specifically is the 2nd half of production where
 the AGM + Generator system was replaced with a small 200AH Lithium system.##
 What I like about the rig
 
-![Floor Plan](/assets/images/inline-images/2022-sequence-tellaro-20l-floor-plan.png)
+{% include post-image.html file="2022-sequence-tellaro-20l-floor-plan.png" alt="Overhead floor plan with twin beds, a wet bath, a galley, and two front seats" width=1961 height=800 loading="eager" %}
+
+[View the full-size floor plan]({{ '/assets/images/inline-images/2022-sequence-tellaro-20l-floor-plan.png' | relative_url }})
 Thor Tellaro 2022 L Floor Plan
 
 Overall, I think the use of space is efficient. There aren't any interior walls
@@ -22,7 +24,7 @@ in almost every direction. The finishings are light and comfortable, and it
 generally feels modern inside. The rig is fully equipped from the factory
 including (a rather basic) LTE Internet solution.
 
-### The Chassis/Driving Experience
+## The Chassis/Driving Experience
 
 "It drives pretty good for a house" pretty much sums up how it drives. The
 Promaster chassis is compliant, stable and easy to operate. Fuel economy is
@@ -31,7 +33,7 @@ stabalizers it doesn't really move around while you're inside. You do sit quite
 high up, and need to be mindful of the size of vehichle you're driving but it's
 not enormous or difficult.
 
-### Upper Storage Cabinets
+## Upper Storage Cabinets
 
 The upper storage cabinets provide lots of space to store things. When closed,
 they're attractive and out of the way. I do have a couple nitpicks on them, one
@@ -42,10 +44,10 @@ into. They also don't sit consistently between cabinets, and they don't
 positively lock so under a hard turn objects have a tendancy to slip past the
 door.
 
-![Upper Cabinets](/assets/images/inline-images/thor-1.jpeg)
+{% include post-image.html file="thor-1.jpeg" alt="Ceiling-height storage cabinets along both sides of the van" width=1280 height=425 %}
 Upper Cabinets open
 
-### The Kitchen
+## The Kitchen
 
 Overall I'm a fan of the kitchen. There's a reasonable sized 12V compressor
 fridge, a combination microwave/convection oven, sink and gas range. Everything
@@ -55,7 +57,7 @@ and seem reasonably durable. The big letdown in the kitchen are the drawers -
 specifically the slides. I haven't quite nailed what's wrong with them but they
 hang and drag while also having a tendancy to fly open randomly.
 
-### The Living Area
+## The Living Area
 
 In my typical configuration, I leave the driver's side in a couch configuration
 and the passenger side I use for a bed. This is a pretty flexible arrangement,
@@ -71,7 +73,7 @@ together with what appear to be random screws covered in a vinyl veneer. Those
 fastenings are already failing on me, which is far from surprising. The driver's
 side headrest also came unscrewed the first time I tried to use it.
 
-### The Bathroom
+## The Bathroom
 
 It's cramped. There are no awards for prime pooping positions, award winning
 showers or anything else to be had here. It's functional but not luxurious. But
@@ -79,7 +81,7 @@ what nobody says is, that's a good thing in a Class B! You don't spend much time
 in the bathroom, the more you use it the more you have to do tank duty, and the
 more space you dedicate to the bathroom the less you have for living space.
 
-![Leaking water](/assets/images/inline-images/thor-2.jpeg)
+{% include post-image.html file="thor-2.jpeg" alt="Plumbing and ducting below the cabinet where the leak appeared" width=1280 height=960 %}
 Leaking water
 
 I did encounter some problems in the bathroom though, the biggest being a water
@@ -90,7 +92,7 @@ is levered out of the way by the anchor wire used to hold the sink up.
 Additionally, the cabinetry suffers from similar problems as the rest of the
 coach. Doors that don't stay closed and drawers that have junky feeling slides.
 
-### The Systems
+## The Systems
 
 One of the final tipping points that led me to buy this rig over some of the
 alternatives had to do with the change over to a Lithium battery system. Lithium
@@ -125,7 +127,7 @@ inoperative. I could, and probably will, write a whole series about what was
 wrong with that system and how it could've been improved but the worst offender
 is that the second alternator was not fully installed.
 
-![Alternator missing nut](/assets/images/inline-images/thor-3.jpeg)
+{% include post-image.html file="thor-3.jpeg" alt="Underside of the van with the missing alternator fastener marked by a red arrow" width=1280 height=960 %}
 Alternator missing nut
 
 The main current-carrying cable from the alternator was not properly secured,
@@ -194,7 +196,7 @@ You might need to turn that on if when shore power is disconnected your
 mastervolt panel goes black. You can access it by removing the headrest on the
 driver's side bed.## Closing Remarks
 
-[Reach out](https://codatory.com/contact) if you have any questions! I'm happy
+[Reach out](mailto:{{ site.email }}) if you have any questions! I'm happy
 enough with the rig, but really wish Thor had gone the extra mile to put in
 better hardware, quality control and integration. That would've been a great
 spend of around $1,000 in the area of customer satisfaction and ensuring they

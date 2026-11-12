@@ -34,8 +34,8 @@ at 30” wide. Eventually, I decided to give it a go and [picked a platform that
 was at a good height, was lightweight but sturdy and had plenty of open space
 underneath](https://amzn.to/2IWRK4f).
 
-![](/assets/images/inline-images/1-t1huja1sauh0mjvzumoatq-2x.jpeg)
-![](/assets/images/inline-images/1-hbh4bscrosne4jl13jbsqa-2x.jpeg)
+{% include post-image.html file="1-t1huja1sauh0mjvzumoatq-2x.jpeg" alt="Bed with a green sleeping bag on the van's raised platform" width=1600 height=2133 %}
+{% include post-image.html file="1-hbh4bscrosne4jl13jbsqa-2x.jpeg" alt="White mattress on a raised platform inside the van" width=1600 height=2133 %}
 
 There we go, a super easy bed (Yes, I know there’s a leg hanging off. In fact,
 the other leg isn’t really stable either. It’s fine, we’ll cover that later.)

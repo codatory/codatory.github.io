@@ -1,11 +1,9 @@
 ---
-layout: default
+layout: page
 title: Privacy policy
 permalink: /privacy/
 description: How Codatory's Scribbles handles information when you visit or get in touch.
 ---
-
-# Privacy policy
 
 This policy covers Codatory's Scribbles at `www.codatory.page` and its site redirects.
 

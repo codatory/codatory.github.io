@@ -48,7 +48,7 @@ Well, the electrical system still sucks. The Under-hood generator failed while I
 was on my recent trip through Texas in a relatively spectacular manner. I'll 
 probably write up a whole post on what happened there whenever it finally gets 
 resolved. But more importantly, the dealer support after sales has been truly horrific. 
-My selling dealer, [LazyDays of Elkhart](https://www.lazydays.com/locations/indiana/elkhart-indiana), 
+My selling dealer, LazyDays of Elkhart (now [a Camping World location](https://rv.campingworld.com/dealer/elkhart-indiana)),
 was perfectly happy to schedule a service appointment to drop off the rig (3 hours away) 
 but once they had the rig in their possession refused to answer the phone, provide 
 any sort of status update or anything else. It wasn't until I sat down and repeatedly 
