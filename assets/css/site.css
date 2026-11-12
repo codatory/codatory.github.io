@@ -1,5 +1,6 @@
 :root {
   color-scheme: light dark;
+  scrollbar-gutter: stable;
   --paper: #faf9f6;
   --panel: #efede7;
   --ink: #242821;
@@ -93,10 +94,6 @@ a.site-name:not(:hover) {
   text-decoration: none;
 }
 
-h1.site-name {
-  font-size: clamp(1.5rem, 1.15rem + 1.25vw, 1.95rem);
-}
-
 .site-header nav {
   display: flex;
   flex-wrap: wrap;
@@ -108,7 +105,11 @@ h1.site-name {
   padding-block: 0.3rem;
 }
 
-[aria-current="page"] {
+.site-header nav a[aria-current="page"] {
+  text-decoration-thickness: 0.16em;
+}
+
+.site-footer [aria-current="page"] {
   font-weight: 700;
 }
 
