@@ -17,11 +17,12 @@
 
       {{ content }}
 
-      {% if site.github.private != true and site.github.license %}
-      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-        This site is open source. {% github_edit_link "Improve this page" %}.
-      </div>
-      {% endif %}
+      <footer class="border-top border-gray-light mt-5 pt-3">
+        <a href="{{ '/privacy/' | relative_url }}"{% if page.url == '/privacy/' %} aria-current="page"{% endif %}>Privacy policy</a>
+        {% if site.github.private != true and site.github.license %}
+        <p>This site is open source. {% github_edit_link "Improve this page" %}.</p>
+        {% endif %}
+      </footer>
     </div>
   </body>
 </html>
