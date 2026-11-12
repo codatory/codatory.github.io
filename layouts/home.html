@@ -1,0 +1,7 @@
+{{ define "main" }}
+<p class="intro">{{ site.Params.description }}</p>
+<h2 id="recent-posts">Recent posts</h2>
+{{ $posts := where site.RegularPages "Type" "posts" }}
+{{ partial "post-list.html" (first 5 (partial "posts-by-date.html" $posts)) }}
+<p><a href="{{ "posts.html" | relURL }}">Browse all posts</a></p>
+{{ end }}

@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ if eq .Type "posts" }}
+<article>
+  <header class="post-header">
+    <h1>{{ .Title }}</h1>
+    <p class="post-date">{{ partial "post-date.html" .Date }}</p>
+  </header>
+  {{ .Content }}
+</article>
+{{ else }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ end }}
+{{ end }}

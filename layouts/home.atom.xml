@@ -1,0 +1,28 @@
+{{- $dateFormat := "2006-01-02T15:04:05Z07:00" -}}
+{{- $posts := where site.RegularPages "Type" "posts" -}}
+{{- $feed := "feed.xml" | absURL -}}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <generator uri="https://gohugo.io/" version="{{ hugo.Version }}">Hugo</generator>
+  <link href="{{ $feed | htmlEscape }}" rel="self" type="application/atom+xml"/>
+  <link href="{{ site.Home.Permalink | htmlEscape }}" rel="alternate" type="text/html"/>
+  <updated>{{ now.Format $dateFormat }}</updated>
+  <id>{{ $feed | htmlEscape }}</id>
+  <title type="html">{{ site.Title | htmlEscape }}</title>
+  <subtitle>{{ site.Params.description | htmlEscape }}</subtitle>
+  {{- range first 10 (partial "posts-by-date.html" $posts) }}
+  <entry>
+    <title type="html">{{ .Title | htmlEscape }}</title>
+    <link href="{{ .Permalink | htmlEscape }}" rel="alternate" type="text/html" title="{{ .Title | htmlEscape }}"/>
+    <published>{{ .Date.Format $dateFormat }}</published>
+    <updated>{{ .Lastmod.Format $dateFormat }}</updated>
+    <id>{{ strings.TrimSuffix ".html" .Permalink | htmlEscape }}</id>
+    <content type="html" xml:base="{{ .Permalink | htmlEscape }}"><![CDATA[{{ replace .Content "]]>" "]]]]><![CDATA[>" }}]]></content>
+    <author><name>{{ .Params.author | default "Codatory" | htmlEscape }}</name></author>
+    {{- range .Params.categories }}
+    <category term="{{ . | htmlEscape }}"/>
+    {{- end }}
+    <summary type="text">{{ .Description | default (.Summary | plainify | htmlUnescape) | htmlEscape }}</summary>
+  </entry>
+  {{- end }}
+</feed>

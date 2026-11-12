@@ -1,0 +1,9 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ $posts := where site.RegularPages "Type" "posts" }}
+{{ $legacyIDs := dict "2024" "section" "2023" "section-1" "2022" "section-2" "2021" "section-3" "2020" "section-4" }}
+{{ range $posts.GroupByDate "2006" "desc" }}
+<h2 id="{{ index $legacyIDs .Key | default (printf "year-%s" .Key) }}">{{ .Key }}</h2>
+{{ partial "post-list.html" (partial "posts-by-date.html" .Pages) }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,37 @@
+baseURL = 'https://www.codatory.page/'
+locale = 'en-US'
+title = "Codatory's Scribbles"
+timeZone = 'America/New_York'
+disableKinds = ['section', 'taxonomy', 'term']
+
+[params]
+description = 'Notes on systems, RVs, and places along the way.'
+
+[caches.images]
+dir = ':cacheDir/images'
+
+[markup.goldmark.parser]
+autoHeadingIDType = 'github-ascii'
+
+[markup.highlight]
+noClasses = false
+
+[outputs]
+home = ['HTML', 'Atom']
+
+[mediaTypes.'application/atom+xml']
+suffixes = ['xml']
+
+[outputFormats.Atom]
+mediaType = 'application/atom+xml'
+baseName = 'feed'
+isPlainText = true
+notAlternative = true
+
+[[module.mounts]]
+source = 'static'
+target = 'static'
+
+[[module.mounts]]
+source = 'assets/images/inline-images'
+target = 'static/assets/images/inline-images'

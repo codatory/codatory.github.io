@@ -1,0 +1,2 @@
+{{- /* Match the legacy filename order when posts share a timestamp. */ -}}
+{{- return (sort (sort . "File.Path" "desc") "Date" "desc") -}}

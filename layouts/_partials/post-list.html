@@ -1,0 +1,8 @@
+<ul class="post-list" role="list">
+  {{- range . }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ partial "post-date.html" .Date }}
+  </li>
+  {{- end }}
+</ul>

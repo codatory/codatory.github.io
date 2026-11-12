@@ -1,0 +1,8 @@
+{{ define "main" }}
+<h1>Page not found</h1>
+<p>The address may have changed, or the page may have been removed.</p>
+<ul>
+  <li><a href="{{ "posts.html" | relURL }}">Browse the posts archive</a></li>
+  <li><a href="{{ site.Home.RelPermalink }}">Go to the homepage</a></li>
+</ul>
+{{ end }}

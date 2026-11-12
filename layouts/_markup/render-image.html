@@ -1,0 +1,42 @@
+{{- $destination := .Destination -}}
+{{- $image := .Page.Resources.Get $destination -}}
+{{- if hasPrefix $destination "/assets/images/inline-images/" -}}
+  {{- $image = resources.Get (strings.TrimPrefix "/assets/" $destination) -}}
+  {{- if not $image }}{{ errorf "Missing image %s at %s" $destination .Position }}{{ end -}}
+{{- end -}}
+{{- $loading := "lazy" -}}
+{{- if and .Page.Params.eager_image (eq .Ordinal 0) -}}
+  {{- $loading = "eager" -}}
+{{- end -}}
+{{- if and $image (reflect.IsImageResourceProcessable $image) -}}
+  {{- $width := math.Min $image.Width 960 | int -}}
+  {{- $format := "jpeg" -}}
+  {{- $quality := 73 -}}
+  {{- if eq $image.MediaType.SubType "png" -}}
+    {{- $format = "png" -}}
+    {{- $quality = 86 -}}
+  {{- end -}}
+  {{- $fallback := $image.Resize (printf "%dx %s" $width $format) -}}
+  {{- $large := $image.Resize (printf "%dx webp q%d" $width $quality) -}}
+  {{- $small := $large -}}
+  {{- if gt $width 480 -}}
+    {{- $small = $image.Resize (printf "480x webp q%d" $quality) -}}
+  {{- end -}}
+  {{- if hasPrefix $destination "/assets/images/inline-images/" -}}
+    {{- $stem := strings.TrimSuffix (path.Ext $destination) (path.Base $destination) -}}
+    {{- $large = resources.Copy (printf "assets/images/responsive/%s-%d.webp" $stem $width) $large -}}
+    {{- if gt $width 480 -}}
+      {{- $small = resources.Copy (printf "assets/images/responsive/%s-480.webp" $stem) $small -}}
+    {{- end -}}
+  {{- end -}}
+  <picture class="post-image">
+    <source type="image/webp"
+      srcset="{{ if gt $width 480 }}{{ $small.RelPermalink }} 480w, {{ end }}{{ $large.RelPermalink }} {{ $width }}w"
+      sizes="{{ if eq $loading "lazy" }}auto, {{ end }}(max-width: 44rem) calc(100vw - 2rem), 42rem">
+    <img src="{{ $fallback.RelPermalink }}" width="{{ $fallback.Width }}" height="{{ $fallback.Height }}"
+      alt="{{ .PlainText }}" loading="{{ $loading }}" decoding="async"{{ with .Title }} title="{{ . }}"{{ end }}>
+  </picture>
+{{- else -}}
+  <img src="{{ with $image }}{{ .RelPermalink }}{{ else }}{{ $destination }}{{ end }}"
+    alt="{{ .PlainText }}" loading="{{ $loading }}" decoding="async"{{ with .Title }} title="{{ . }}"{{ end }}>
+{{- end -}}
